@@ -64,7 +64,7 @@ const fetchData = async (id, page) => {
 	let urlParam = page === "films" ? "movie" : "tv";
 	const res = await axios
 		.get(
-			`https://api.themoviedb.org/3/${urlParam}/${id}?api_key=${REACT_APP_TMDB_API_KEY}&append_to_response=videos`
+			`https://api.themoviedb.org/3/${urlParam}/${id}?api_key=750d717aee423aa3221d0ac25396478e&append_to_response=videos`
 		)
 		.then(({ data }) => {
 			return data;
