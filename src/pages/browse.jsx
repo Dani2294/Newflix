@@ -7,6 +7,7 @@ const audio = new Audio("/assets/netflix-song.mp3");
 function Browse() {
 	const [showProfiles, setShowProfiles] = useState(true);
 	const [showVideo, setShowVideo] = useState(false);
+	const [startVideo, setStartVideo] = useState(false);
 	const navigate = useNavigate();
 	const location = useLocation();
 
@@ -23,6 +24,7 @@ function Browse() {
 	const handleShowProfiles = () => {
 		setShowProfiles(false);
 		setShowVideo(true);
+		audio.autoplay = true;
 		audio.play();
 		setTimeout(() => {
 			setShowVideo(false);
@@ -33,10 +35,13 @@ function Browse() {
 	return (
 		<div>
 			{showProfiles ? (
-				<SelectProfiles handleShowProfiles={handleShowProfiles} />
+				<SelectProfiles
+					handleShowProfiles={handleShowProfiles}
+					setStartVideo={setStartVideo}
+				/>
 			) : (
 				<Layout browse>
-					{showVideo && <Video />}
+					{showVideo && <Video startVideo={startVideo} />}
 					<Outlet />
 				</Layout>
 			)}

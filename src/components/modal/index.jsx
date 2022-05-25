@@ -5,7 +5,7 @@ import axios from "axios";
 import DetailsModal from "./DetailsModal";
 import PlayerModal from "./PlayerModal";
 
-const REACT_APP_TMDB_API_KEY = process.env.REACT_APP_TMDB_API_KEY;
+//const REACT_APP_TMDB_API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 
 function ModalContainer({ id, type, setShowModal }) {
 	const [showPlayer, setShowPlayer] = useState(false);

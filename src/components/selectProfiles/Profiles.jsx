@@ -10,7 +10,7 @@ import {
 } from "./styles/profiles.style";
 import { getCurrentUser } from "../../services/firebase/auth";
 
-function Profiles({ handleShowProfiles }) {
+function Profiles({ handleShowProfiles, setStartVideo }) {
 	const [showSpinner, setShowSpinner] = useState(false);
 	const [isLoading, setIsLoading] = useState(true);
 
@@ -27,6 +27,7 @@ function Profiles({ handleShowProfiles }) {
 
 		setTimeout(() => {
 			setShowSpinner(false);
+			setStartVideo(true);
 			handleShowProfiles();
 		}, 1000);
 	};

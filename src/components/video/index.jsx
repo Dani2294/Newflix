@@ -2,11 +2,11 @@ import React from "react";
 import ReactPlayer from "react-player";
 import { VideoWrapper } from "./styles/video.style";
 
-function Video() {
+function Video({ startVideo }) {
 	return (
 		<VideoWrapper>
 			<ReactPlayer
-				playing
+				playing={startVideo}
 				url="/assets/videos/netflix-intro.mov"
 				muted
 				width="100%"
