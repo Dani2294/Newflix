@@ -6,10 +6,10 @@ import { getFirestore } from "firebase/firestore";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const REACT_APP_FIREBASE_API_KEY = process.env.REACT_APP_FIREBASE_API_KEY;
+//const REACT_APP_FIREBASE_API_KEY = process.env.REACT_APP_FIREBASE_API_KEY;
 
 const firebaseConfig = {
-	apiKey: REACT_APP_FIREBASE_API_KEY,
+	apiKey: "AIzaSyBS9mIzvodbzXnqNZirN35eo02uIvYinPA",
 	authDomain: "redo-newfilx.firebaseapp.com",
 	projectId: "redo-newfilx",
 	storageBucket: "redo-newfilx.appspot.com",
