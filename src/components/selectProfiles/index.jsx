@@ -3,14 +3,11 @@ import PropTypes from "prop-types";
 import TopBar from "../topbar";
 import Profiles from "./Profiles";
 
-function SelectProfiles({ handleShowProfiles, setStartVideo }) {
+function SelectProfiles({ handleShowProfiles }) {
 	return (
 		<>
 			<TopBar browse />
-			<Profiles
-				handleShowProfiles={handleShowProfiles}
-				setStartVideo={setStartVideo}
-			/>
+			<Profiles handleShowProfiles={handleShowProfiles} />
 		</>
 	);
 }
