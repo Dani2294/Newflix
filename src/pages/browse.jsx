@@ -28,7 +28,7 @@ function Browse() {
 		setTimeout(() => {
 			setShowVideo(false);
 			navigate("/browse/films");
-		}, 4000);
+		}, 4500);
 	};
 
 	return (

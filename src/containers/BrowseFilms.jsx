@@ -26,6 +26,7 @@ function BrowseFilms() {
 			const flatArray = [].concat(...item.slides);
 			arr = [...arr, ...flatArray];
 		});
+		setAllContent(arr);
 		console.log(arr);
 	}, [data]); */
 
